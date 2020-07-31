@@ -1,0 +1,267 @@
+
+/* Reset CSS // O asteristico[*] subscreve todo o código*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 240px;
+}
+
+
+/* formulário */
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-in button {
+    border: none;
+}
+
+/* estilizando o formulário os 3 seletores vão receber a 
+mesma propriedade por isso agrupado*/
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 180px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+section {
+    padding: 3rem 0 4rem 0;
+    
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+     }
+}
+
+@media screen and (max-width: 480px) {
+    .languages {
+        flex-wrap: wrap;
+     }
+}
+
+@media screen and (max-width: 480px) {
+    .cards {
+        flex-direction: column;
+        
+     }
+     .card.red {
+         width: 100%;
+     }
+     .card.blue {
+        width: 100%;
+    }
+    .card.purple {
+        width: 100%;
+    }
+    .card.yellow {
+        width: 100%;
+    }
+    .card.green{
+        width: 100%;
+    }
+    .cta {
+        display: flex;
+        padding-top: 10px;
+        flex-direction: column;
+        
+    }
+    .cta a button secondary {
+        padding-top: 10px;
+        
+    }
+    
+
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h1.title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.gray {
+    background-color: #f7f7f7;
+    
+}
+
+.container {
+    /* max-width (o maximo da largura que eu quero é 1000pixel mas se a 
+    janela for menor ele se ajusta automaticamente */
+    max-width: 1000px;
+    margin: auto;
+    /* 1º x pra cima e pra baixo e y para esquerda e direita */
+    padding: 0 1rem;
+    
+    
+}
+
+
+
+.hero {
+    width: 80%;
+    margin: auto;
+}
+
+.intro p {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.intro .cta {
+    margin: 2rem 0;
+}
+
+.button {
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+
+}
+
+.primary {
+    background-color: #3396fe;
+    color: white;
+}
+
+.secondary {
+    background-color: white;
+    color: #444;
+}
+
+.cards {
+    /* display flex para deixar uma do lado da outra em colunas */
+    display: flex;
+    /* space betteween é para deixar igualmente separado uns dos outros */
+    justify-content: space-between;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.card {
+    /* display flex para usar as propriedade do flexbox */
+    display: flex;
+    height: 150px;
+    /* 18% para dar um espaço entre os outros 20 fica colado */
+    width: 18%;
+    border-radius: 10px;
+    /* text-align center para deixar o texto no centro */
+    text-align: center;
+    /* flexdire..column para deixar em colunas para poder centralizar o texto */
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 1.7rem;
+    
+}
+
+.card.red {
+    background-color: #ec454e;
+}
+
+.card.blue {
+    background-color: #42b0f8;
+}
+
+.card.purple {
+    background-color: #9e69d5;
+}
+
+.card.yellow {
+    background-color: #f4a823;
+}
+
+.card.green {
+    background-color: #3cbfa1;
+}
+
+.members {
+    /* display flex para deixar uma do lado da outra em colunas */
+    display: flex;
+    /* space betteween é para deixar igualmente separado uns dos outros */
+    justify-content: space-between;
+
+    /* flex-wrap para deixar um item abaixo do outro */
+    flex-wrap: wrap;
+}
+
+.member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+footer {
+    background-color: #3788bf;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-top: 3rem;
+    /* para tirar as bolas list-sty... */
+    list-style-type: none;
+    
+}
+
+footer a {
+    color: white;
+}
+
+footer p.copyright {
+    padding: 3rem 0;
+    color: #ffffffcc;
+    text-align: center;
+}
